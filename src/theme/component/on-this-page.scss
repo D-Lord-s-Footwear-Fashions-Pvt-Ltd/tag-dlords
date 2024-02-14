@@ -1,0 +1,51 @@
+.on-this-page{
+
+  .headline{
+    padding: 0px 8px;
+  }
+  .list-view{
+    color: var(--md-sys-color-on-surface-variant) ;
+    padding:4px 8px;
+    transition: 0.3s;
+    border-radius: 24px;
+    border: 1px solid transparent;
+   &:hover{
+     cursor: pointer;
+     background-color: var(--md-sys-color-surface-variant);
+    }
+
+  }
+  .active-brand{
+    padding:4px 8px;
+    color: var(--md-sys-color-on-primary-container) ;
+    border: 1px solid var(--md-sys-color-outline);
+    transition: border 0.3s ease-in-out;
+  }
+
+  .active-proforma-invoice{
+    padding:4px 8px;
+    color: var(--md-sys-color-on-primary-container) ;
+    border: 1px solid var(--md-sys-color-outline);
+    transition: border 0.3s ease-in-out;
+  }
+
+  .active-factory{
+    padding:4px 8px;
+    color: var(--md-sys-color-on-primary-container) ;
+    border: 1px solid var(--md-sys-color-outline);
+    transition: border 0.3s ease-in-out;
+  }
+
+
+
+  .bottleneck{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+    background: var(--md-sys-color-error);
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+}

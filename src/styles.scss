@@ -1,0 +1,176 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+@import "theme/theme.css";
+@import "theme/component/input";
+@import "theme/component/card";
+@import "theme/component/button";
+@import "theme/component/navigation-rail";
+@import "theme/component/top-app-bar";
+@import "theme/component/side-nav";
+@import "theme/component/navigation-drawer";
+@import "theme/component/tool-tip";
+@import "theme/component/on-this-page";
+@import "theme/component/select";
+@import "theme/component/chip";
+@import "theme/component/bottom-sheet";
+@import "theme/component/angular-editor";
+@import "theme/component/tracking";
+@import "theme/component/table";
+@import "theme/component/toggle";
+@import "theme/component/stepper";
+@import "theme/component/img-upload";
+@import "theme/component/date-picker";
+@import "theme/component/dialog";
+@import "theme/component/skeleton-loader";
+
+
+$md-vision-primary: (
+  50 : #e6eef4,
+  100 : #c2d4e3,
+  200 : #99b8d0,
+  300 : #709cbd,
+  400 : #69a3d4,
+  500 : #4589bd,
+  600 : #2d6998,
+  700 : #265e8e,
+  800 : #1f5484,
+  900 : #134273,
+  A100 : #a9d0ff,
+  A200 : #76b4ff,
+  A400 : #4398ff,
+  A700 : #2a8aff,
+  contrast: (50 : #323232,
+    100 : #323232,
+    200 : #323232,
+    300 : #323232,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #323232,
+    A200 : #323232,
+    A400 : #323232,
+    A700 : #ffffff,
+  ));
+
+
+
+$vision-cms-primary: mat.define-palette($md-vision-primary, 500 ,100 ,900);
+$vision-cms-accent: mat.define-palette($md-vision-primary, 400, 300 ,200);
+
+// The warn palette is optional (defaults to red).
+$vision-cms-warn: mat.define-palette(mat.$red-palette);
+$vision-typography: mat.define-typography-config(
+  $font-family: 'Poppins',
+);
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$vision-cms-theme: mat.define-light-theme((
+  color: (
+    primary: $vision-cms-primary,
+    accent: $vision-cms-accent,
+    warn: $vision-cms-warn,
+  ),
+  typography: $vision-typography
+));
+
+$vision-cms-dark-theme: mat.define-dark-theme((
+  color:(
+    primary: $vision-cms-primary,
+    accent: $vision-cms-accent,
+    warn: $vision-cms-warn,
+  ),
+  typography: $vision-typography
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($vision-cms-theme);
+
+.darkMode{
+  @include mat.all-component-colors($vision-cms-dark-theme);
+}
+
+html, body {
+  height: 100vh;
+  background-color: var(--md-sys-color-surface) !important; ;
+  color: var(--md-sys-color-on-surface) !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body { margin: 0;
+
+}
+
+::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: transparent;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--md-sys-color-surface-variant);
+  border-radius: 2px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-sys-color-secondary);
+}
+
+.done{
+  padding: 8px;
+  height: 104px;
+  width: 104px;
+}
+
+.error{
+  border-radius: 16px;
+  border: 1px solid var(--md-sys-color-on-error);
+  background: var(--md-sys-color-error);
+  color: var(--md-sys-color-on-error);
+  padding: 12px;
+}
+
+.ng2-pdf-viewer-container{
+  overflow: hidden !important;
+}
+
+
+.upload-done{
+  height: 100px;
+  .mat-icon{
+    scale: 6;
+    color: var(--md-sys-color-primary) !important;
+  }
+}
+
+.custom-width {
+  width: 450px;
+}
+
+
+.custom-width-2{
+  width: 580px;
+}

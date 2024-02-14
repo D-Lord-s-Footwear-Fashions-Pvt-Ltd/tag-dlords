@@ -1,0 +1,32 @@
+.chips{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px 6px 8px;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  transition: 0.3s;
+
+  &-bottleneck{
+    color: var(--md-sys-color-error) !important;
+    background-color: var(--md-sys-color-error-container) !important;
+  }
+
+  &-secondary{
+    color: var(--md-sys-color-on-secondary-container) !important;
+    background-color: var(--md-sys-color-secondary-container) !important;
+  }
+
+  &-pass{
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+  }
+
+  &-fail{
+    color: var(--md-sys-color-error) !important;
+    background-color: var(--md-sys-color-error-container) !important;
+  }
+}

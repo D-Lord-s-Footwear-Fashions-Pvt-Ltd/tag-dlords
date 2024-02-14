@@ -1,0 +1,15 @@
+.mat-slide-toggle-bar{
+  background: var(--md-sys-color-disable) !important;
+  border: 1px solid var(--md-sys-color-outline-variant) !important;
+  width: 34px !important;
+}
+
+.mat-slide-toggle-thumb {
+  height: 18px !important;
+  width: 18px !important;
+  border:1px solid var(--md-sys-color-on-disable) !important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: var(--md-sys-color-primary-container) !important;
+  border:1px solid var(--md-sys-color-primary)  !important;
+}

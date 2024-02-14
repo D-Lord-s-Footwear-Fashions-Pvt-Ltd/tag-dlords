@@ -1,0 +1,79 @@
+.mat-datepicker-content {
+  border-radius: 16px !important;
+  background: transparent !important;
+}
+.mat-calendar{
+  border-radius: 16px !important;
+  background: var(--md-sys-color-surface-variant) !important;
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+.mat-datepicker-content-container{
+  border-radius: 16px !important;
+}
+
+.mat-calendar-body-cell-content, .mat-date-range-input-separator {
+  color: var(--md-sys-color-on-surface)  !important;
+  border-color: transparent !important;
+}
+
+.mat-button-focus-overlay {
+  color: var(--md-sys-color-on-surface) !important;
+}
+.mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button {
+  color: var(--md-sys-color-on-surface) !important;
+
+}
+
+abbr[title] {
+  text-decoration: none  !important;
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+.mat-calendar-body-label {
+  color: var(--md-sys-color-on-surface) !important;
+}
+.mat-calendar-body-selected {
+  background: var(--md-sys-color-primary) !important;
+  color: var(--md-sys-color-on-primary) !important;
+}
+
+.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+  border-color:  var(--md-sys-color-primary)  !important;
+}
+
+.mat-calendar-table-header th {
+  text-decoration: none !important;
+}
+
+.mat-calendar-arrow{
+  fill: var(--md-sys-color-on-secondary) !important;
+}
+
+
+.po-date {
+  .mat-calendar-body-cell-content, .mat-date-range-input-separator{
+    background: var(--md-sys-color-secondary) !important;
+    color: var(--md-sys-color-on-secondary) !important;
+  }
+}
+
+.pi-date {
+  .mat-calendar-body-cell-content, .mat-date-range-input-separator{
+    background: var(--md-sys-color-primary) !important;
+    color: var(--md-sys-color-on-primary) !important;
+  }
+}
+
+.mat-calendar-table-header-divider::after {
+  background:  var(--md-sys-color-outline) !important;
+  opacity: 0.5 !important;
+}
+
+.mat-calendar-body-cell-preview{
+  border-color: var(--md-sys-color-primary) !important;
+}
+.mat-datepicker-actions {
+  background: var(--md-sys-color-surface-variant) !important;
+  color: var(--md-sys-color-on-surface) !important;
+}

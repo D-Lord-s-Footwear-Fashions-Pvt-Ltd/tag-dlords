@@ -1,0 +1,115 @@
+.img-upload-wrapper{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer !important;
+  & input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer !important;
+  }
+
+  .container{
+    padding: 2rem;
+    text-align: center;
+    background: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-primary);
+    border: dashed 1px var(--md-sys-color-primary);
+    position: relative;
+    border-radius: 16px;
+    margin-bottom: 1px;
+    cursor: pointer !important;
+
+    input {
+      opacity: 0;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      cursor: pointer !important;
+    }
+    label {
+      width: 183px;
+      height: 44px;
+      border-radius: 16px;
+      background-color: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary) ;
+      padding: 12px 24px;
+      cursor: pointer !important;
+    }
+    .primary-text{
+      cursor: pointer !important;
+    }
+  }
+}
+
+
+.image-area {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  height: 180px;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 12px;
+  padding: 8px 4px;
+  transition: 0.3s;
+  position: relative;
+
+  img {
+    aspect-ratio: 2.7/3;
+    object-fit: contain;
+  }
+}
+
+
+
+.image-area-2 {
+  background-color: #fff;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px;
+  padding:  4px;
+  transition: 0.3s;
+  position: relative;
+
+  img{
+    width: 200px;
+  }
+
+}
+
+
+
+
+
+.remove-image {
+  display: none;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 10em;
+  padding: 1px 7px 4px 7px;
+  text-decoration: none;
+  font: 700 21px/20px sans-serif;
+  background: #323232;
+  color: #FFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.remove-image:hover {
+  background: var(--md-sys-color-primary);
+  padding: 1px 7px 4px 7px;
+  top: -10px;
+  right: -10px;
+}
+
+

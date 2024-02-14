@@ -1,0 +1,51 @@
+.mat-stepper-vertical {
+  background-color: var(--md-sys-color-surface) !important;
+}
+.mat-step-header:hover{
+  background-color: transparent !important;
+}
+.mat-step-header.cdk-program-focused {
+  background-color: transparent !important;
+}
+.mat-step-header.cdk-mouse-focused{
+  background-color: transparent !important;
+}
+.mat-step-header.cdk-focused{
+  background-color: transparent !important;
+}
+
+.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label {
+  padding: 8px 0 0 0 !important;
+  text-align: center;
+  width: 100%;
+}
+.mat-vertical-content-container{
+  border-left-color: var(--md-sys-color-primary) !important;
+}
+.mat-stepper-vertical-line{
+  border-left-color: var(--md-sys-color-primary) !important;
+}
+
+.mat-stepper-vertical-line:before{border-color: var(--md-sys-color-outline-variant) !important;}
+.mat-step-header {
+
+  .mat-step-icon {
+    background-color: var(--md-sys-color-surface-variant) !important;
+    color: var(--md-sys-color-on-surface-variant) !important;
+  }
+  .mat-step-icon-selected{
+    background-color: var(--md-sys-color-primary-container) !important;
+    color: var(--md-sys-color-on-primary-container) !important;
+  }
+
+  .mat-step-label{
+    color: var(--md-sys-color-on-surface) !important;
+    .mat-step-label-active {
+      color: var(--md-sys-color-primary) !important;
+    }
+  }
+}
+
+.stepper-container{
+  min-height: 15vh;
+}

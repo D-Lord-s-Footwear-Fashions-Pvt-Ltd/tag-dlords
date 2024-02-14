@@ -1,0 +1,57 @@
+.angular-editor-toolbar {
+  font: 100 14px/15px Poppins !important;
+  background-color: transparent !important;
+  font-size: .8rem;
+  padding: 0px 0px !important;
+  border: none !important;
+  border-radius: 14px !important;
+  transition: 0.3s;
+  margin-top: -10px !important;
+  margin-bottom: 10px !important;
+}
+
+
+.angular-editor-toolbar-set .angular-editor-button {
+  background-color: var(--md-sys-color-primary-container) !important;
+  vertical-align: middle;
+  border: transparent !important;
+  padding: 0.4rem;
+  margin-right: 4px !important;
+  border-radius: 8px !important;
+  transition: 0.3s;
+
+
+  .fa{
+    color: var(--md-sys-color-primary) !important;
+  }
+}
+
+.angular-editor-toolbar .angular-editor-toolbar-set .angular-editor-button.active {
+  background: var(--md-sys-color-primary) !important;
+
+  .fa{
+    color: var(--md-sys-color-primary-container) !important;
+  }
+}
+
+
+.angular-editor .angular-editor-wrapper .angular-editor-textarea {
+  min-height: 5rem;
+  padding: 0.5rem 0.8rem 1rem;
+  border: 1px solid var(--md-sys-color-on-surface-variant) !important;
+  background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  border-radius: 4px !important;
+  outline:1px solid transparent !important;
+  &:hover{
+    outline: 1px solid  !important;
+    margin: 0px !important;
+  }
+
+  &:focus{
+    outline:  1px solid var(--md-sys-color-primary) !important;
+    margin: 0px !important;
+  }
+}

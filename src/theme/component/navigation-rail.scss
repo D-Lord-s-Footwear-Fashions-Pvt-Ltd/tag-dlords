@@ -1,0 +1,89 @@
+
+
+
+.uk-toolbar{
+  width: 80px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  background-color: var(--md-sys-color-surface);
+  border-right: 0.1px solid  var(--md-sys-color-outline-variant) ;
+  &-route{
+    height: 56px;
+    text-decoration: none !important;
+    transition: 0.3s;
+    mat-icon{
+      scale: 0.9;
+      padding: 2px 12px;
+      border-radius: 40px;
+      color: var(--md-sys-color-on-surface-variant) ;
+      &:hover{
+        transition: 0.3s;
+        color: var(--md-sys-color-on-surface-variant);
+        background-color: var(--md-sys-color-surface-variant);
+      }
+    }
+    .label-medium{
+      margin-top: -2px !important;
+      color: var(--md-sys-color-on-surface)
+    }
+  }
+
+  .active{
+    transition: 0.3s;
+    width: 75px;
+    border-radius: 8px;
+    color: var(--md-sys-color-on-surface) ;
+
+    mat-icon{
+      color: var(--md-sys-color-on-primary-container) ;
+      background-color: var(--md-sys-color-primary-container);
+      &:hover{
+        color: var(--md-sys-color-on-secondary-container);
+      }
+    }
+    .label-medium{
+      margin-top: -2px !important;
+      color: var(--md-sys-color-on-primary-container)
+    }
+  }
+  .uk-width-1-1{
+    margin-top: 12px;
+  }
+  .logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+    margin-left: 16px;
+    border-radius: 80px;
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary) !important;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .profile{
+    height: 52px;
+    width: 52px;
+    margin-left: 16px;
+    border-radius: 80px;
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container) !important;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .profile-active{
+    border: 1px solid var(--md-sys-color-on-primary-container);
+  }
+}
+
+

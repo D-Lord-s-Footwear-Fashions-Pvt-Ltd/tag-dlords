@@ -1,0 +1,124 @@
+.uk-offcanvas-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -270px;
+  box-sizing: border-box;
+  width: 270px;
+  padding: 20px 20px;
+  background: var(--md-sys-color-surface) ;
+  color: var(--md-sys-color-on-surface-variant);
+  overflow-y: auto;
+  border-right: 1px solid var(--md-sys-color-outline-variant);
+  border-radius:0px 16px 16px 0px !important;
+
+
+  .menu-close-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 100px;
+    color: var(--md-sys-color-on-surface);
+  }
+  .spacer {
+    flex: 1 1 auto;
+  }
+  ul{
+    list-style: none;
+    padding: 0px;
+
+    .label-large{
+      font-size: 16px !important;
+    }
+    .route-button{
+      text-decoration: none;
+      height: 56px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 4px;
+      padding-left: 10px;
+      padding-right: 10px;
+      gap: 12px;
+      border-radius: 100px;
+      z-index: 1000;
+      top: 0px !important;
+      right: 0px !important;
+      color: var(--md-sys-color-on-surface-variant);
+    }
+    .route-button-sub{
+      text-decoration: none;
+      height: 56px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 14px;
+      padding-right: 10px;
+      gap: 12px;
+      border-radius: 100px;
+      color: var(--md-sys-color-on-surface-variant);
+
+      &:hover{
+        background-color: var(--md-sys-color-surface-variant);
+      }
+    }
+
+
+
+
+    .route-button-expand{
+      margin-left: 10%;
+      text-decoration: none;
+      height: 56px;
+      border-radius: 100px;
+      margin-top: 4px;
+      width: 90%;
+      padding-left: 14px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      background-color: transparent;
+      color: var(--md-sys-color-on-background) ;
+    }
+
+
+    .active-category{
+      background-color: var(--md-sys-color-surface-variant) ;
+    }
+
+
+    .active{
+      transition: 0.3s;
+      color: var(--md-sys-color-on-secondary-container) ;
+      background-color: var(--md-sys-color-primary-container);
+      font-weight: 500;
+    }
+  }
+
+
+
+  .bottom-button__inner {
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 26px;
+    gap: 12px;
+    background: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+    border-radius: 100px;
+  }
+
+
+
+}

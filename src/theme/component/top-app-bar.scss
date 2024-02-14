@@ -1,0 +1,59 @@
+.top-app-bar{
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 4px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--md-sys-color-background) ;
+  overflow: hidden;
+  z-index:100;
+
+
+  &-2{
+    padding: 8px 8px;
+    width: 100%;
+    //border-bottom: 1px solid var(--md-sys-color-outline-variant);
+    //background: linear-gradient(0deg,transparent 0, var(--md-sys-color-background)16px);
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .menu-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 100px;
+    color: var(--md-sys-color-on-surface);
+  }
+
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    border-radius: 100px;
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container) !important;
+  }
+
+  .profile-active{
+    border: 1px solid var(--md-sys-color-on-primary-container);
+  }
+
+}
