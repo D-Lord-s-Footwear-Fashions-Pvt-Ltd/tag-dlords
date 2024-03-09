@@ -3,7 +3,7 @@ import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   @ViewChild('input1') input1!: ElementRef<HTMLInputElement>;
@@ -11,6 +11,7 @@ export class AppComponent {
   @ViewChild('input3') input3!: ElementRef<HTMLInputElement>;
   @ViewChild('input4') input4!: ElementRef<HTMLInputElement>;
   @ViewChild('input5') input5!: ElementRef<HTMLInputElement>;
+  @ViewChild('input6') input6!: ElementRef<HTMLInputElement>;
 
   constructor() {}
 
@@ -21,19 +22,20 @@ export class AppComponent {
     nextInput.focus();
   }
 
-  
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent): void {
     if (event.key === 'Backspace') {
       const activeElement = document.activeElement as HTMLElement;
       const tagName = activeElement.tagName.toLowerCase();
-      if (tagName === 'input' && (activeElement as HTMLInputElement).selectionStart === 0) {
+      if (
+        tagName === 'input' &&
+        (activeElement as HTMLInputElement).selectionStart === 0
+      ) {
         event.preventDefault(); // Prevent the default behavior of backspace
         this.handleBackspace(activeElement as HTMLInputElement);
       }
     }
   }
-
 
   handleBackspace(currentInput: HTMLInputElement): void {
     switch (currentInput) {
@@ -59,6 +61,12 @@ export class AppComponent {
         if (this.input4) {
           this.input4.nativeElement.focus();
           this.input4.nativeElement.value = '';
+        }
+        break;
+      case this.input6.nativeElement:
+        if (this.input5) {
+          this.input5.nativeElement.focus();
+          this.input5.nativeElement.value = '';
         }
         break;
       default:
